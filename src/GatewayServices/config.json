@@ -1,0 +1,38 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Warehouse/Get-All",
+      "DownstreamScheme": "https",
+      "DownstreamHost": "localhost",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7084"
+        },
+        {
+          "Host": "localhost",
+          "Port": "5084"
+        }
+      ],
+      "UpstreamPathTemplate": "/Warehouse/Get-All-Warehouse",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Warehouse/add",
+      "DownstreamScheme": "https",
+      "DownstreamHost": "localhost",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7084"
+        },
+        {
+          "Host": "localhost",
+          "Port": "5084"
+        }
+      ],
+      "UpstreamPathTemplate": "/Warehouse/Add-Warehouse",
+      "UpstreamHttpMethod": ["POST"]
+    }
+  ]
+}
